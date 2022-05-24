@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./test.js",
-    "lint:fix": "eslint --fix ./test.js",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "commit": "git-cz"
   },
   "repository": {
@@ -13,8 +13,9 @@
     "url": "git+https://github.com/sultan-young/front-end-standard.git"
   },
   "lint-staged": {
-    "./**/*.{js}": [
-      "eslint --fix ./test.js",
+    "src/**": [
+      "prettier --config .prettierrc --write",
+      "eslint --fix",
       "git add"
     ]
   },
@@ -37,6 +38,7 @@
     "cz-customizable": "^6.3.0",
     "eslint": "^8.16.0",
     "husky": "^8.0.1",
-    "lint-staged": "^12.4.1"
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
   }
 }
