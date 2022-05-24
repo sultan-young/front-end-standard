@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint"
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sultan-young/front-end-standard.git"
+  },
+  "lint-staged": {
+    "./**/*.{js}": [
+        "eslint --fix",
+        "git add"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "eslint": "^8.16.0",
-    "husky": "^8.0.1"
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1"
   }
 }
