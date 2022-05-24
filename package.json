@@ -13,9 +13,14 @@
   },
   "lint-staged": {
     "./**/*.{js}": [
-        "eslint --fix ./test.js",
-        "git add"
+      "eslint --fix ./test.js",
+      "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+        "path": "./node_modules/cz-customizable"
+    }
   },
   "author": "",
   "license": "ISC",
@@ -28,6 +33,7 @@
     "@commitlint/config-conventional": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
+    "cz-customizable": "^6.3.0",
     "eslint": "^8.16.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.1"
