@@ -12,13 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/sultan-young/front-end-standard.git"
   },
-  "lint-staged": {
-    "src/**": [
-      "prettier --config .prettierrc --write",
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-customizable"
