@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
     "env": {
         "browser": true,
@@ -29,7 +30,7 @@ module.exports = {
         // 禁止不必要的分号
         "no-extra-semi": "error",
         // 强制所有控制语句使用一致的括号风格
-        "curly": "error"
-        
+        "curly": "error",
+        "semi": ['error', 'always'],
     }
 }
