@@ -12,3 +12,4 @@ console.log(123123123);
 console.log(!!true);
 
 console.log(1, 3, 5);
+1;
